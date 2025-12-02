@@ -1,0 +1,31 @@
+body{
+    background-color: yellow;
+    font-family: "Anton", sans-serif;
+
+}
+h1{
+    text-align: center;
+}
+button{
+    background-color: black;
+    margin: 30px;
+    border-radius: 20px;
+}
+button img{
+    width: 150px;
+    height: 150px;
+    background-color: black;
+   
+    border-radius: 20px;
+
+}
+#playerchoice,#computerchoice,#playerdisplay,#computerdisplay{
+    font-size: 2rem;
+    text-align: center;
+    margin: 5px;
+}
+#resultdisplay{
+    font-size: 3rem;
+    text-align: center;
+    margin: 50px;
+}

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ROCK PAPER SCISSORS</title>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>ROCK PAPER SCISSORS</h1>
+    <div id="choices">
+        <button  onclick="playgame('rock')"><img src="images/rock.png"></button>
+        <button onclick="playgame('paper')"><img src="images/paper.png"></button>
+        <button onclick="playgame('scissors')"><img src="images/scissors.png"></button>
+    </div>
+    <div id="playerchoice">Player:</div>
+    <div id="computerchoice">Computer:</div>
+
+    <div id="playerdisplay">Player Score:
+        <span id="playerscore">0</span>
+    </div>
+    <div id="computerdisplay">Computer Score:
+        <span id="computerscore">0</span>
+    </div>
+
+    <div id="resultdisplay"></div>
+
+    <script src="index.js"></script>
+</body>
+</html>
