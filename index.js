@@ -16,27 +16,29 @@ function playgame(play){
         {
             result="ITS'S A TIE";
             resultdisplay.textContent=result;
-            playerchoice.textContent+=play;
-            computerchoice.textContent+=computerselect;
+            playerchoice.textContent=`Player : ${play}`;
+            computerchoice.textContent=`Computer : ${computerselect}`;
         }
     else if((play=="rock" && computerselect=="scissors") ||
             (play=="paper" && computerselect=="rock") ||   
             ( play=="scissors" && computerselect=="paper") )
             {
                 result="YOU WIN";
+                playermark++;
                 resultdisplay.textContent=result;
-                playerscore.textContent=playermark++;
+                playerscore.textContent=playermark;
 
                 playerchoice.textContent=`Player : ${play}`;
                 computerchoice.textContent=`Computer : ${computerselect}`;
             }
     else{
         result="YOU LOSE";
-        computerscore.textContent=computermark++;
+        computermark++;
+        computerscore.textContent=computermark;
 
         resultdisplay.textContent=result;
-        playerchoice.textContent+=play;
-        computerchoice.textContent+=computerselect;
+        playerchoice.textContent=`Player : ${play}`;
+        computerchoice.textContent=`Computer : ${computerselect}`;
     }
     
 }
